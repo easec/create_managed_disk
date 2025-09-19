@@ -41,12 +41,9 @@ variables:
   diskSizeOs: 128
   diskSizeData: 40
   vhdUriOS: "https://snapshottestsa.blob.core.windows.net/snapshot/easec-vm_OsDisk_1_snap.vhd"
-  vhdUriData: "https://snapshottestsa.blob.core.windows.net/snapshot/easec-vm_DataDisk_1_snap.vhd"
+  vhdUriData: "https://snapshottestsa.blob.core.windows.net/snapshot/easec-vm_ODataDisk_1_snap.vhd"
   storageType: "Premium_LRS"
-  osType: "windows"
-  hyperVGeneration: "v2"
-  vmSize: "Standard_DS1_v2"
-  virtualMachineName: "easec-vm"
+
 
 stages:
 - stage: Provision
