@@ -56,4 +56,5 @@ stages:
          scriptType: pscore
          scriptLocation: inlineScript
          inlineScript: |
+          az disk create --resource-group "$(resourceGroupName)" --name "$(osDiskName)" --sku "$(storageType)" --location "$(location)" --size-gb "$(diskSizeOs)" --source "$(vhdUriData)"
           az disk create --resource-group "$(resourceGroupName)" --name "$(dataDiskName)" --sku "$(storageType)" --location "$(location)" --size-gb "$(diskSizeData)" --source "$(vhdUriData)"
